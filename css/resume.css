@@ -53,9 +53,11 @@ p.lead {
   font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 1.5rem;
 }
-
-.social-icons a {
-  display: inline-block;
+.social-icons{
+  display: flex;
+  align-items: center;
+}
+.social-icons >a {
   height: 3.5rem;
   width: 3.5rem;
   background-color: #495057;
@@ -65,6 +67,22 @@ p.lead {
   font-size: 1.5rem;
   line-height: 3.5rem;
   margin-right: 1rem;
+}
+.hireMe>a{
+  display: inline-block;
+  padding: 1rem;
+  background-color: #495057;
+  color: #fff !important;
+  border-radius: 50%;
+  text-align: end;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+.hireMe:hover{
+  background-color: #BD5D38;
+    border-radius: 50%;
 }
 
 .social-icons a:last-child {
@@ -91,6 +109,28 @@ p.lead {
 
 #sideNav .navbar-toggler:focus {
   outline-color: #d48a6e;
+}
+.imgDiv{
+  height: 15rem;
+  overflow-y: scroll;
+}
+.card img{
+ width: 100%;
+}
+.card-front{
+  margin: .5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.card-front >a{
+  padding: .5rem;
+  background-color: #BD5D38 ;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.card-front >a:hover{
+  color: white;
 }
 
 @media (min-width: 992px) {
